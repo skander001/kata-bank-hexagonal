@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ClaudeCodeEditorTabs">
+    <option name="activeSessionId" value="32eee22a-13a0-411d-91d0-70ae0661773b" />
+    <option name="openSessionIds">
+      <list>
+        <option value="4eedf432-970d-40b1-9487-aad3a2b7b3bf" />
+        <option value="32eee22a-13a0-411d-91d0-70ae0661773b" />
+      </list>
+    </option>
+    <option name="sessionPaths">
+      <map>
+        <entry key="32eee22a-13a0-411d-91d0-70ae0661773b" value="/sessions/a1daa25a-f5e0-4ade-8cef-3862a3def068" />
+        <entry key="4eedf432-970d-40b1-9487-aad3a2b7b3bf" value="/sessions/9adb9b5e-c35c-4ce5-a128-271ef7cdda32" />
+        <entry key="f5f7b448-2d19-49a4-9fb6-cc048382b66b" value="/sessions/new" />
+      </map>
+    </option>
+    <option name="sessionTitles">
+      <map>
+        <entry key="32eee22a-13a0-411d-91d0-70ae0661773b" value="deplacer le package config et la classe KataBankAp" />
+        <entry key="4eedf432-970d-40b1-9487-aad3a2b7b3bf" value="Feature 2: Overdraft We want to implement an autho" />
+        <entry key="f5f7b448-2d19-49a4-9fb6-cc048382b66b" value="localhost:49972/sessions/new?workingDir=%2FUsers%2Fskander%2FIdeaProjects%2Fkata-bank-hexagonal&amp;panelId=f5f7b448-2d19-49a4-9fb6-cc048382b66b&amp;theme=dark&amp;pair=pvyoG763tBAdNZmnRjpzUhu2mbcHAEOP" />
+      </map>
+    </option>
+  </component>
+</project>

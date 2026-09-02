@@ -1,0 +1,11 @@
+exemple de prompt pour le chatbot :
+Analyse le projet et respecte CLAUDE.md.
+
+Je dois implémenter une fonctionnalité de virement bancaire.
+
+Le virement est créé via REST.
+Il doit être enregistré en PostgreSQL puis envoyé de manière fiable
+sur Kafka pour traitement asynchrone.
+
+Analyse d'abord l'existant et propose l'architecture.
+Ne modifie aucun fichier avant d'avoir terminé ton analyse.

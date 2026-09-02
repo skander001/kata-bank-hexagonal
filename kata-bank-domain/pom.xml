@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>fr.shelali.tech.consulting</groupId>
+        <artifactId>kata-bank-hexagonal</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>kata-bank-domain</artifactId>
+    <name>kata-bank-domain</name>
+    <description>Coeur hexagonal : modele du domaine, ports entrants/sortants et services applicatifs</description>
+
+    <!--
+        Regle structurante : ce module ne depend d'AUCUN framework.
+        Pas de Spring, pas de JPA, pas de Jackson, pas de Lombok, pas de Bean Validation.
+        Les invariants metier sont exprimes en Java pur ; les seules dependances sont de test.
+        C'est ce qui garantit l'inversion de dependance : les adapters dependent du domaine,
+        jamais l'inverse.
+    -->
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Neutralise la chaine d'annotation processing heritee du parent :
+                 le domaine n'utilise ni Lombok ni MapStruct. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <proc>none</proc>
+                    <annotationProcessorPaths combine.self="override"/>
+                    <compilerArgs combine.self="override"/>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: kata-bank
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/kata_bank
+    username: kata_bank
+    password: kata_bank
+
+  jpa:
+    # Le schema est la propriete de Flyway, jamais d'Hibernate.
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: kata-bank
+      auto-offset-reset: earliest
+    producer:
+      acks: all
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
